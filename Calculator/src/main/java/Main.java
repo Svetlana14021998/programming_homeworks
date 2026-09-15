@@ -13,9 +13,9 @@ public class Main {
     private static final String INCORRECT_OPERATION = "Выберите доступную операцию:" +
             "+ сложение, - вычитание, / деление, * умножение";
 
-    private static final char EXIT_COMMAND = '!';
+    private static final char EXIT_COMMAND = 'S';
 
-    private static final char RESET_COMMAND = '#';
+    private static final char RESET_COMMAND = 'C';
 
     public static void main(String[] args) {
         System.out.println(WELCOME_MESSAGE);
@@ -25,11 +25,11 @@ public class Main {
         while (true) {
             char operation = readOperation(scanner);
 
-            if (operation == EXIT_COMMAND) {
+            if (Character.toUpperCase(operation) == EXIT_COMMAND) {
                 System.out.println("Завершение работы калькулятора");
                 break;
             }
-            if (operation == RESET_COMMAND) {
+            if (Character.toUpperCase(operation) == RESET_COMMAND) {
                 firstOperand = readDouble(scanner, "Первое число:");
                 continue;
             }
