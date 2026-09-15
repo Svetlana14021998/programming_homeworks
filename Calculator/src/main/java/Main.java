@@ -5,8 +5,8 @@ public class Main {
 
     private static final String WELCOME_MESSAGE = "Добро пожаловать в приложение калькулятор!" +
             "\nДоступные операции: + сложение, - вычитание, / деление, * умножение." +
-            "\nДля выхода из калькулятора вместо выбора действия введите !" +
-            "\nДля сброса результата введите #";
+            "\nДля выхода из калькулятора вместо выбора действия введите S" +
+            "\nДля сброса результата введите C";
 
     private static final List<Character> AVAILABLE_OPERATIONS = List.of('-', '+', '/', '*');
 
@@ -25,11 +25,11 @@ public class Main {
         while (true) {
             char operation = readOperation(scanner);
 
-            if (Character.toUpperCase(operation) == EXIT_COMMAND) {
+            if (operation == EXIT_COMMAND) {
                 System.out.println("Завершение работы калькулятора");
                 break;
             }
-            if (Character.toUpperCase(operation) == RESET_COMMAND) {
+            if (operation == RESET_COMMAND) {
                 firstOperand = readDouble(scanner, "Первое число:");
                 continue;
             }
@@ -51,7 +51,7 @@ public class Main {
     private static char readOperation(Scanner scanner) {
         while (true) {
             System.out.print("Операция: ");
-            char operation = scanner.next().charAt(0);
+            char operation = Character.toUpperCase(scanner.next().charAt(0));
 
             if (operation == EXIT_COMMAND || operation == RESET_COMMAND
                     || AVAILABLE_OPERATIONS.contains(operation)) {
