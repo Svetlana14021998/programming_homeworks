@@ -1,0 +1,26 @@
+{
+  "vbBRFs": {
+    "originalUrl": "https://ya.ru/",
+    "code": "vbBRFs",
+    "expiresAt": "2026-11-15T22:00:35.332276Z",
+    "limit": 6,
+    "currentLimit": 6,
+    "ownerUuid": "3f636e05-9ad4-4180-8b5c-25099a4c75cc"
+  },
+  "F8mGUZ": {
+    "originalUrl": "https://ya.ru/",
+    "code": "F8mGUZ",
+    "expiresAt": "2026-11-15T21:57:48.124795900Z",
+    "limit": 3,
+    "currentLimit": 2,
+    "ownerUuid": "1f6dfdb3-bcce-44d5-97e3-2c0266949e13"
+  },
+  "GkHp05": {
+    "originalUrl": "https://www.translate.ru",
+    "code": "GkHp05",
+    "expiresAt": "2026-11-15T21:59:53.514964500Z",
+    "limit": 4,
+    "currentLimit": 3,
+    "ownerUuid": "1f6dfdb3-bcce-44d5-97e3-2c0266949e13"
+  }
+}
