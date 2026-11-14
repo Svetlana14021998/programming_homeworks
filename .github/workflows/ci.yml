@@ -22,4 +22,4 @@ jobs:
           cache: maven
 
       - name: Build and Run Tests
-        run:  run: mvn -f ./ShortLinksApp/pom.xml clean verify
+        run: mvn -f ./ShortLinksApp/pom.xml clean verify
